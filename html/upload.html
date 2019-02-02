@@ -1,0 +1,60 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" /> 
+    <link rel="stylesheet" type="text/css" href="../css/style.css"> 
+    <title>movieDB</title>
+    <script>
+        function goBack() {
+          window.history.back()
+        }
+    </script>  
+</head>
+<body>
+    <div class="header">
+        <h1>upload movie</h1>
+    </div> 
+     
+    <button onclick="goBack()">Go Back</button>
+
+    <form method="post" action="../php/upload.php">
+        <table>
+            <tr>
+                <td>Title:</td>
+                <td><input type="text" name="title" ></td>
+            </tr>
+            <tr>
+                <td>Year:</td>
+                <td><input type="date" name="year"></td>
+            </tr>
+            <tr>
+                <td>Length:</td>
+                <td><input type="text" name="length"></td>
+            </tr>
+            <tr>
+                <td>Picture:</td>
+                <td><input type="file" name="picture" ></td>
+            </tr>
+            <tr>
+                <td>Genre:</td>
+                    <td>
+                        <select type="number" name="genre_id" action="../php/upload.php">
+                            <option value="1">Drama</option>
+                            <option value="2">Action</option>
+                            <option value="3">Triller</option>
+                            <option value="4">Horror</option>
+                            <option value="4">Comedy</option>
+                            <option value="4">Animation</option>
+                            <option value="4">Vestern</option>
+                        </select>
+                    </td>                 
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" name="upload_btn" value="Upload"></td>
+            </tr>
+        </table>
+        
+</body>
+</html>
+

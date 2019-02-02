@@ -1,0 +1,35 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" /> 
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script>
+        function goBack() {
+          window.history.back()
+        }
+    </script> 
+    <title>movieDB</title>  
+</head>
+<body>
+    <div class="header">
+        <h1>Login</h1>
+    </div>
+    <button onclick="goBack()">Go Back</button>
+    
+    
+    <form method="post" action="../php/login.php">
+        <table>
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" name="username" class="textInput"></td>
+            </tr>            
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password" class="textInput"></td>
+            </tr>            
+            <tr>
+                <td></td>
+                <td><input type="submit" name="login_btn" value="Login"></td>
+            </tr>
+</body>
+</html>
